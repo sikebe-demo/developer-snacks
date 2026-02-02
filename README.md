@@ -34,7 +34,7 @@ A simple web application demonstrating internationalization (i18n) support.
 developer-snacks/
 ├── index.html          # Main HTML file
 ├── js/
-│   ├── i18n.js        # i18next initialization and translations
+│   ├── i18n.js        # Custom i18n implementation and translations
 │   └── app.js         # Application logic
 ├── locales/
 │   ├── en.json        # English translations
