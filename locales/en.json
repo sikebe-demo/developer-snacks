@@ -1,0 +1,19 @@
+{
+  "title": "Developer Snacks",
+  "description": "A collection of useful tools and resources for developers. This application demonstrates internationalization (i18n) support.",
+  "features": {
+    "title": "Features",
+    "item1": {
+      "title": "Multilingual Support",
+      "description": "Switch between English and Japanese seamlessly."
+    },
+    "item2": {
+      "title": "Easy to Use",
+      "description": "Simple interface with instant language switching."
+    },
+    "item3": {
+      "title": "Responsive Design",
+      "description": "Works perfectly on desktop and mobile devices."
+    }
+  }
+}
