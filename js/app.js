@@ -2,7 +2,7 @@
 function updateContent() {
     document.querySelectorAll('[data-i18n]').forEach(function(element) {
         const key = element.getAttribute('data-i18n');
-        element.textContent = i18next.t(key);
+        element.textContent = i18n.t(key);
     });
     
     // Update active button
@@ -11,15 +11,14 @@ function updateContent() {
 
 // Change language
 function changeLanguage(lng) {
-    i18next.changeLanguage(lng, function(err, t) {
-        if (err) return console.log('Error changing language', err);
+    if (i18n.changeLanguage(lng)) {
         updateContent();
-    });
+    }
 }
 
 // Update active language button
 function updateActiveLanguageButton() {
-    const currentLang = i18next.language;
+    const currentLang = i18n.getLanguage();
     document.querySelectorAll('.language-switcher button').forEach(function(btn) {
         btn.classList.remove('active');
     });
@@ -31,5 +30,6 @@ function updateActiveLanguageButton() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-    updateActiveLanguageButton();
+    updateContent();
 });
+

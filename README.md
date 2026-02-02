@@ -45,7 +45,7 @@ developer-snacks/
 
 ## How It Works
 
-The application uses [i18next](https://www.i18next.com/) for internationalization:
+The application uses a custom lightweight i18n implementation:
 
 1. **Translation Files**: Language strings are defined in `js/i18n.js` and also available as separate JSON files in the `locales/` directory
 2. **Language Switching**: Click the language buttons at the top to switch between English and Japanese
