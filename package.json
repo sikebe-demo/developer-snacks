@@ -2,7 +2,6 @@
   "name": "developer-snacks",
   "version": "1.0.0",
   "description": "A web application showcasing data visualizations with Chart.js",
-  "main": "index.js",
   "scripts": {
     "serve": "live-server --port=8080 --open=/",
     "lint": "npm run lint:js && npm run lint:html",
